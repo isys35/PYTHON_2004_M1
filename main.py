@@ -10,9 +10,4 @@ total = (summa_zakaza + tips+ tax)
 print('Total :', total)
 
 print("Thank you, come again")
-#comment
-
-#poles
-def create_task():
-    pass
 
