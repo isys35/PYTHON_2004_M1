@@ -5,9 +5,6 @@ try:
     else:
         numbers.sort()
         step = numbers[1] - numbers[0]
-        if step + numbers[1] == numbers[2]:
-            print(True)
-        else:
-            print(False)
-except Exception as e:
+        print(True if step + numbers[1] == numbers[2] else False)
+except ValueError:
     print("Неправильный ввод чисел!")
