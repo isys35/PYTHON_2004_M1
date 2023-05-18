@@ -5,11 +5,11 @@ week_base = {
     4: "Четверг",
     5: "Пятница",
     6: "Суббота",
-    7: "Воскресенье",
+    7: "Воскресенье"
 }
 
 try:
     number = int(input("Введите целочисленное число: "))
     print(week_base.get(number, "Такого дня недели не существует!"))
-except Exception as e:
+except ValueError:
     print("Неправильный ввод!")
