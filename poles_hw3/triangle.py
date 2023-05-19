@@ -24,5 +24,5 @@ if edge_a + edge_b > edge_c and edge_a + edge_c > edge_b and edge_b + edge_c > e
 else:
     print("Треугольник не может существовать.") # Иначе
 
-import turtle
+
 
