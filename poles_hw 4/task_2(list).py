@@ -1,6 +1,6 @@
 user_input = int(input('Введите целое неотрицательное число:'))
-# Создаю список
-user_list = list(range(1, user_input))
+# Создаю список и прибавляю единицу для корректной длины списка по условиям
+user_list = list(range(1, user_input + 1))
 # Создаю второй список( функуию reversed загуглил как способ создания списка в обратном порядке
 user_list_2 = list(reversed(user_list))
 
