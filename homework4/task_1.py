@@ -1,15 +1,26 @@
 
-writers = ["Лермонтов", "Гоголь", "Толстой", "Достоевский", "Чехов"]
-product = ["Герой нашего времени", "Мертвые души", "Война и мир", "Преступление и наказание", "Вишневый сад"]
+dict_test = {
+    "Лермонтов": "Герой нашего времени",
+    "Гоголь": "Мертвые души",
+    "Толстой": "Война и мир",
+    "Достоевский": "Преступление и наказание",
+    "Чехов": "Вишневый сад"
+}
 
-dict_test = {writers[index]: product[index] for index in range(len(writers))}
+#пробовал много вариантов перебора самого словаря, но в лучшем случае засчитывал ответ,
+#просто находящегося ключа в словаре, но с неверным ответом
 
-qestions = 0
+
+writers = list(dict_test.keys())
+product = list(dict_test.values())
+
 right = 0
-while qestions < len(product):
-    answer = input(f"Кто написал прозведение {product[qestions]}? - ").title()
-    if answer in writers[qestions]:
-        right += 1
-    qestions += 1
+qestions = 0
 
-print(f"Количество верных ответов: {right} из {qestions}")
+while qestions < len(product):
+    answer = input(f"Кто написал произведение {product[qestions]}? - ").title()
+    if answer in writers[qestions]:
+        right +=1
+    qestions +=1
+
+print(f"Правильных ответов: {right} из {qestions}")
