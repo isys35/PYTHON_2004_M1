@@ -1,5 +1,5 @@
 MAX_PEOPLE = 10
-user_input = int(input("Введите оличество гостей: "))
+user_input = int(input("Введите Количество гостей: "))
 guests_count = list(range(0, user_input))
 # print(guest_count)
 
