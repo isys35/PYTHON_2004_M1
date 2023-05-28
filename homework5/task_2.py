@@ -5,7 +5,7 @@ if party_people < 10:
     while True:
         name = input("Введите имя приглашаемого: ").title()
 
-        if name == "":
+        if not name:
             break
 
         print(f"{name} has been invited")
