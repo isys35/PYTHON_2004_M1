@@ -7,7 +7,6 @@ while True:
 
     if user_input == compnum:
         print("Вы угадали число")
-        running = False
         counter += 1
         break
     if user_input < compnum:
