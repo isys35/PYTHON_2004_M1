@@ -1,4 +1,4 @@
-day_nomber = input("Введите чисто дня недели: ")
+day_nomber = input("Введите номер дня недели: ")
 
 match day_nomber:
     case "1":
