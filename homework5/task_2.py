@@ -1,13 +1,21 @@
 
-party_people = int(input("Сколько человек вы хотите пригласить на вечеринку? - "))
+while True:
+    try:
+        party_people = int(input("Сколько человек вы хотите пригласить на вечеринку? - "))
+        if isinstance(party_people, int):
+            if party_people < 10:
+                while True:
+                    name = input("Введите имя приглашаемого(Enter для выхода): ").title()
 
-if party_people < 10:
-    while True:
-        name = input("Введите имя приглашаемого: ").title()
+                    if not name:
+                        break
 
-        if not name:
+                    print(f"{name} has been invited")
+            else:
+                print("Too many people")
             break
 
-        print(f"{name} has been invited")
+        else: raise ValueError
 
-else: print("Too many people")
+    except ValueError:
+        print("Введите количество человек числом!")
