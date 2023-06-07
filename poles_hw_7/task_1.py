@@ -2,11 +2,11 @@ FAT_COEFFICIENT = 9
 СH_COEFFICIENT = 4
 
 def fat_calculation (input_1):
-    print(f'Количество полученных каллорий от жиров в граммах: {input_1 * FAT_COEFFICIENT}')
+    return f'Количество полученных каллорий от жиров в граммах: {input_1 * FAT_COEFFICIENT}'
 
 
 def ch_calculation(input_2):
-    print(f'Количество полученных каллорий от углеводов в граммах: {input_2 * СH_COEFFICIENT}')
+    return f'Количество полученных каллорий от углеводов в граммах: {input_2 * СH_COEFFICIENT}'
 
 if __name__ == '__main__':
 
