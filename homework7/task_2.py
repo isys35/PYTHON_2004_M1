@@ -1,10 +1,16 @@
 
-def n_realization(funcion, n):
-    for i in range(n):
-        funcion()
+def repeater(repeat):
+    def decorator(function):
+        def wrapper(*args):
+            for i in range(repeat):
+                print(f"{i+1}: ", end="")
+                val = function(*args)
+            return val
+        return wrapper
+    return decorator
 
-# def z_count(x= 23, y = 34):
-#     z = x + y
-#     print(z)
-#
-# n_realization(z_count, 5)
+@repeater(repeat=7)
+def z_count(name):
+    print(f"Привет {name}")
+
+z_count("Сергей")
