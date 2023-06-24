@@ -2,16 +2,16 @@ class List:
     '''Класс содержащий список чисел'''
 
     def __init__(self, list):
-        '''создаю пустой список, что бы в дальнейшем его наполнить только числами '''
         self.list = []
         for i in list:
-            if type(i) == int or type(i) == float:  #проверка для исключения других типов данных
-                self.list.append(i)                 #добавление в новый список только численных значений
+            if type(i) == int or type(i) == float:
+                self.list.append(i)
 
 
     def list_showing(self):
         '''метод для отображения созданного списка'''
         return print(self.list)
+
     def medium_calculation(self):
         '''метод для отображения среднего значения списка элементов'''
         return print(round(sum(self.list) / len(self.list)))
