@@ -6,7 +6,7 @@ def get_input_func():
 def html_decorator(function):
     def html_wrapper():
         return f"<html>{function}<html>"
-    return html_wrapper
+    return html_wrapper()
 
 
 print(html_decorator(get_input_func()))
