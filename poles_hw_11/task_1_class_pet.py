@@ -12,12 +12,14 @@ class Pet:
          self.type = type
          self.animal_type = self.type
          return self.animal_type
+
     def set_age(self, age):
         self.age = age
         return self.age
 
     def get_name(self):
         return f' "{self.name}" Очень Вам рад'
+
     def get_animal_type(self):
         return f' По своей сути Ваш питомец -  {self.animal_type}'
 
