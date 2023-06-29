@@ -1,7 +1,7 @@
 def html_teg(function):
     def html_wrapper():
-        asd = function()
-        return f"<html>{asd}<html>"
+        abc = function()
+        return f"<html>{abc}<html>"
     return html_wrapper()
 
 
