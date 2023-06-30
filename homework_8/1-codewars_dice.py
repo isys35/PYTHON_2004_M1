@@ -1,3 +1,13 @@
+# Homework-8: Task-1
+"""
+Greed is a dice game played with five six-sided dice.
+Your mission, should you choose to accept it, is to score a throw according to these rules.
+You will always be given an array with five six-sided dice values.
+https://www.codewars.com/kata/5270d0d18625160ada0000e4/train/python
+"""
+
+import random
+
 SCORES = {
     (1, 3): 1000,
     (6, 3): 600,
@@ -29,5 +39,8 @@ def calculate_points(dice):
 
 
 if __name__ == "__main__":
-    input_data = [1, 1, 1, 1, 1]  # Тут можно инпут, но я сразу для теста так сделал
-    print(calculate_points(input_data))
+
+    throw = [random.randint(1, 6) for _ in range(5)]
+
+    print(f"You throw: {throw}")
+    print(calculate_points(throw))
